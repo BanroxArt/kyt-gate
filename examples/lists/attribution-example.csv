@@ -1,0 +1,4 @@
+address,ticker,category,label,ref
+0xe0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0,ETH,mixer,Example mixer 1,synthetic
+0xe1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1,ETH,mixer,Example mixer 2,synthetic
+0xe2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2,ETH,mixer,Example mixer 3,synthetic

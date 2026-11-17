@@ -1,0 +1,25 @@
+# kyt-gate
+
+> Policy-as-code gate for stablecoin and token transfers: token allowlist with GENIUS Act status, address lists with freshness dates, exposure thresholds, FinCEN special measures, Travel Rule completeness, and a replay that compares two policies on labelled history. Engineering checklist, not legal advice.
+
+Python, one dependency (special-measures), no network calls. Every finding names its rule and source; the decision is the strictest finding. Includes an importer for addresses in OFAC's SDN.CSV and SDN_COMMENTS.CSV that the user downloads. Tested on synthetic data only.
+
+Built and maintained by Art Akopian, CEO of Banrox (https://banrox.com).
+
+## Docs
+
+- [README.md](https://github.com/BanroxArt/kyt-gate/blob/main/README.md): Rules, dates that matter, what is real and what is not.
+- [docs/sources.md](https://github.com/BanroxArt/kyt-gate/blob/main/docs/sources.md): Primary sources.
+- [SKILL.md](https://github.com/BanroxArt/kyt-gate/blob/main/SKILL.md): Agent skill for writing and testing a policy.
+
+## Source
+
+- [gate.py](https://github.com/BanroxArt/kyt-gate/blob/main/src/kytgate/gate.py): The rules.
+- [policy.py](https://github.com/BanroxArt/kyt-gate/blob/main/src/kytgate/policy.py): Policy file format.
+- [lists.py](https://github.com/BanroxArt/kyt-gate/blob/main/src/kytgate/lists.py): Address lists and the OFAC import.
+- [sim.py](https://github.com/BanroxArt/kyt-gate/blob/main/src/kytgate/sim.py): Replay and comparison.
+
+## Optional
+
+- [examples/policy-base.toml](https://github.com/BanroxArt/kyt-gate/blob/main/examples/policy-base.toml): Example policy with made-up tokens and lists.
+- [CHANGELOG](https://github.com/BanroxArt/kyt-gate/blob/main/CHANGELOG.md): Notable changes.
